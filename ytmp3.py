@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 
-import youtube_dl
+import yt_dlp
 
 from cfonts import render
 
@@ -49,7 +49,7 @@ ydl_opts = {
         'preferredquality': '192',
     }],
 }
-with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     ydl.download([url])
     
 print("\n\nYour mp3 file downloaded successfully!! Thanks for using ...")
